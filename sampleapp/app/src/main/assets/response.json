@@ -1,0 +1,45 @@
+{
+  "Transaction": {
+    "Id": "115452742",
+    "CustomerId": "74198791469",
+    "Date": "2016-10-06T16:01:18Z",
+    "AuthorizationCode": "",
+    "Amount": 80.00,
+    "GratuityAmount": 0.0,
+    "Card": {
+      "Number": "XXXXXXXXXXX 1008",
+      "FirstName": "John",
+      "LastName": "Paull",
+      "Brand": "AMEX",
+      "ExpirationMonth": null,
+      "ExpirationYear": null,
+      "AvsCode": "0",
+      "AvsResult": 2
+    },
+    "Check": null,
+    "BillAddress": {
+      "Line1": "",
+      "City": "Austin",
+      "State": "New Yark",
+      "Zip": "12345",
+      "Country": "AMERICA",
+      "Company": null,
+      "Phone": null
+    },
+    "Email": "worldpay@gmail.com",
+    "PaymentType": 3,
+    "AdditionalData": null,
+    "ResponseText": "DECLINED - CALL VOICE OPER"
+  },
+  "EMVData": {
+    "EMVAuthResponseCode": null,
+    "IssuerAuthenticationData": "D5BC6989AC975E9F3031",
+    "IssuerScriptResult": null,
+    "IssuerScriptTemplate1": null,
+    "IssuerScriptTemplate2": null
+  },
+  "ResponseCode": 2,
+  "ResponseMessage": "DECLINED - CALL VOICE OPER",
+  "Success": false,
+  "Result": "DECLINE"
+}

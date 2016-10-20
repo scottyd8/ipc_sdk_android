@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+
+    <com.worldpay.library.views.iM3FormEditText
+        android:id="@+id/field_customer_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:gravity="end"
+        android:hint="Customer ID"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal"
+        android:padding="10dp" />
+
+
+    <com.worldpay.library.views.iM3FormEditText
+        android:id="@+id/field_payment_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:gravity="end"
+        android:hint="Payment ID"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal"
+        android:padding="10dp" />
+
+    <com.worldpay.library.views.iM3FormEditText
+        android:id="@+id/field_transaction_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:gravity="end"
+        android:hint="Amount"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal"
+        android:padding="10dp" />
+
+</LinearLayout>

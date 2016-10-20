@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:checked="false"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/debit_credit"
+            android:checked="false"
+            android:icon="@drawable/ic_debit"
+            android:title="Debit/Credit " />
+
+        <!-- <item
+             android:id="@+id/manual"
+             android:layout_gravity="center"
+             android:checked="false"
+             android:icon="@drawable/ic_manual"
+             android:title="Manual Entry" />
+ -->
+        <item
+            android:id="@+id/refund_void"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:icon="@mipmap/ic_refund"
+            android:title="Refund/Void" />
+        <item
+            android:id="@+id/settlement"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:icon="@mipmap/ic_manual_entry"
+            android:title="Settlement" />
+
+    </group>
+
+</menu>

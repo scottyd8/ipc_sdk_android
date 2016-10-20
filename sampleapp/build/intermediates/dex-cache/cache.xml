@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\exploded-aar\miura-release\jars\libs\miura-sdk-release.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2d8ab4cfeb403953a5aef416ca44bd13fbd9e0e2">
+        <dex dex="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\pre-dexed\debug\miura-sdk-release_5bcd7430a4752b6c36f05c8c955f4dff4b2bb789.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-24.2.1_f947df33c626ba98a4313439c57d8268b6b4c024.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jleimon\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\pre-dexed\debug\support-annotations-24.2.1_34220cb4397a8ff24c61d867216c50facc80cb03.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\libs\httpcore-4.1.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="592ffbd778cbcc2e2dc5d162b35c16d6a538fea2">
+        <dex dex="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\pre-dexed\debug\httpcore-4.1.4_324238c7699acd5f92604a748cec12403ca88ac4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ac6948cce36f694f3eb3d73a135e298dc4b3527a">
+        <dex dex="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\pre-dexed\debug\de.hdodenhof-circleimageview-1.3.0_112a6cf89f9c4a2be668c3aa24c86e21964228fd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\libs\httpclient-4.1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a260d242a42d8ccaec0c410084f9b62d47a7c2c5">
+        <dex dex="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\pre-dexed\debug\httpclient-4.1.3_3f04732249a9c29f4639f26db055fc8a5ceb35b0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_3b0f043bacee0829693ab91465516506782aa60c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-24.2.1_7ae556adfdb3eac68176ab3056d0c07019e7f7a1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-24.2.1_3211147961f02450c2ef0056fe9490daa3c25f26.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_5d5ed3b432fb972621626dc68367582f4a5a2b16.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\exploded-aar\miura-release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2e39c22b3741e0c054566912357521c092441223">
+        <dex dex="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\pre-dexed\debug\intermediates-exploded-aar-miura-release_30570d2fc3b82b64457902123689cfe5cc8988f2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-24.2.1_85e5b4db53d306852ef5653202c5f17c669bf681.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.2.1_066e72cf41eba4b7fb951d3fc9d5570e3dbfaaaa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jleimon\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.7\751f548c85fa49f330cecbb1875893f971b33c4e\gson-2.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\pre-dexed\debug\gson-2.7_19959e57f7455cdfbead47d1513eba35c9ef6172.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_686c05316bd1a8c2e3ce75ea7a10695705f37d09.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-24.2.1_db261b0cdce8dc466c32d11942ec6c81eb83b523.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_2591c64bafcb69997a994f8d1f2872cdd40f22c6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\pre-dexed\debug\com.android.support-design-24.2.1_38d6d649c1ef0b4cef2e4203bea8c100bb24e952.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.2.1_8ea53a9b5449b496700b21dbd989adac463af80d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-24.2.1_1f6bce574202c6ffaf6942aa8409dd2b95b8a763.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.2.1_0e5fbf2ba969db62ce8c7102c9044abdc2588b3f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\libs\httpmime-4.1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e70d34d98f7f7f3b2b92105b9f2fe2a7a7184461">
+        <dex dex="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\pre-dexed\debug\httpmime-4.1.3_1a59f232ff9909d61645fbbdc24c59ff3e1cc022.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_47f5beab44e0fef53e5babf5d1ca8d3bae9458ac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\jleimon\Desktop\Workspace\android-demo-app\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.2.1_a1d0f82e6857ba0ff4118f43f136ba84b7af3192.jar" />
+    </item>
+
+</items>
