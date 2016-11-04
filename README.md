@@ -1,4 +1,4 @@
-# Worldpay Integrated Payment Client for Android
+# Worldpay Integrated Payment Client for Android (Beta)
 
 ## Building the Sample Application
 The quickest way to see the Integrated Payment Client SDK in action is with the sample application.
