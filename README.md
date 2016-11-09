@@ -4,7 +4,7 @@
 The quickest way to see the Integrated Payment Client SDK in action is with the sample application.
 
 ### Quick Win
-1.  Get the [sample app](http://github.com/worldpayus/ipc_sdk_android/sampleapp)  
+1.  Get the [sample app](http://github.com/worldpayus/ipc_sdk_android/tree/master/sampleapp)  
 2.  Open the project in the Android Studio, build it and run it in the simulator
 
 You can run the app in the simulator and exercise the functions that don't require a device.
