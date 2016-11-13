@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+
+    defaultConfig {
+        applicationId "com.worldpayment.demoapp"
+        minSdkVersion 18
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+
+        buildConfigField 'String', 'DEVELOPER_ID', '"12345678"'
+        buildConfigField 'String', 'MERCHANT_ID', '""'
+        buildConfigField 'String', 'MERCHANT_KEY', '""'
+        buildConfigField 'com.worldpay.library.enums.MerchantGatewayType', 'MERCHANT_GATEWAY',
+                'com.worldpay.library.enums.MerchantGatewayType.SECURENET'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            minifyEnabled false
+        }
+    }
+    repositories {
+
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+
+dependencies {
+
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    // compile(name: 'miura-debug', ext: 'aar')
+
+    compile(name: 'my_miura-debug', ext: 'aar')
+
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:cardview-v7:24.2.0'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.android.support:design:24.2.1'
+    compile 'de.hdodenhof:circleimageview:1.3.0'
+    compile 'com.android.support:support-v4:24.2.1'
+    testCompile 'junit:junit:4.12'
+}

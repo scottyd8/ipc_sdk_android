@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wp_tx_dialog_container_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginEnd="20dp"
+    android:layout_marginStart="20dp"
+    android:background="@drawable/bg_wp_tx_dialog"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        style="?android:attr/textAppearanceSearchResultTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:text="Title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/disable_gray" />
+
+    <TextView
+        android:id="@+id/message"
+        style="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:text="Message" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/disable_gray" />
+
+    <LinearLayout
+        android:id="@+id/wp_tx_dialog_container_action_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/dialog_btn_negative"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_clicked"
+            android:duplicateParentState="true"
+            android:text="@android:string/cancel"
+            android:textColor="@color/worldPay_green"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/dialog_btn_positive"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_clicked"
+            android:duplicateParentState="true"
+            android:text="@android:string/ok"
+            android:textColor="@color/worldPay_green"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>

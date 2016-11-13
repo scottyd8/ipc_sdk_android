@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:checked="false"
+            android:icon="@mipmap/ic_home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/debit_credit"
+            android:checked="false"
+            android:icon="@mipmap/ic_credit_debit"
+            android:title="Credit/Debit" />
+
+        <item
+            android:id="@+id/refund_void"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:icon="@mipmap/ic_refund_void"
+            android:title="Refund/Void" />
+        <item
+            android:id="@+id/settlement"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:icon="@mipmap/ic_settlement"
+            android:title="Settlement" />
+
+        <item
+            android:id="@+id/vault"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:icon="@mipmap/ic_vault"
+            android:title="Vault Customer"
+            android:visible="false" />
+
+    </group>
+
+</menu>

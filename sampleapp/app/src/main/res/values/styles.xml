@@ -1,0 +1,57 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="buttonStyle">
+        <item name="android:background">@drawable/button_shap</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="buttonWithNoColorStyle">
+        <item name="android:background">@drawable/button_disable</item>
+        <item name="android:textColor">@color/worldPay_green</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="noBoldText">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextBold">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="homeButtons">
+        <item name="android:textSize">@dimen/text_size20</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:drawablePadding">-40dp</item>
+        <item name="android:background">@drawable/button_shap</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="EditTextField">
+        <item name="android:background">@drawable/edittext_rounded</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <!--<item name="android:layout_marginTop">10dp</item>-->
+    </style>
+</resources>

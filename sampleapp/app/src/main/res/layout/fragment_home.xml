@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="20"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:adjustViewBounds="true"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/worldpay_logo" />
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="world"-->
+            <!--android:textColor="@color/gray"-->
+            <!--android:textSize="30dp" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="pay"-->
+            <!--android:textColor="@color/worldPay_red"-->
+            <!--android:textSize="30dp" />-->
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/debit_credit_button"
+            style="@style/homeButtons"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:drawableStart="@mipmap/ic_credit_debit"
+            android:text="Debit/Credit" />
+
+        <Button
+            android:id="@+id/refund_void_button"
+            style="@style/homeButtons"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:drawableLeft="@mipmap/ic_refund_void"
+            android:text="Refund/Void" />
+
+        <Button
+            android:id="@+id/settlement_button"
+            style="@style/homeButtons"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:drawableLeft="@mipmap/ic_settlement"
+            android:text="Settlement" />
+
+        <Button
+            android:id="@+id/vault_customer_button"
+            style="@style/homeButtons"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:drawableLeft="@mipmap/ic_vault"
+            android:text="Vault Customer"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>
