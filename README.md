@@ -1,26 +1,23 @@
-# Worldpay Integrated Payment Client for Android (Beta)
+# android-sdk
 
-## Building the Sample Application
-The quickest way to see the Integrated Payment Client SDK in action is with the sample application.
+## Project Structure
+- All modules are contained within the SDK project
+- The `library` module contains the source code for the artifacts that will be distributed to other developers for integration purposes.
+- The `miuraSdk` module contains the source code for the Miura PED driver.
+- The `testHarness` module consists of two sub-modules. `miuratestapp` and `sdktestapp`
+    - `miuratestapp` contains the test application for the Miura PED driver.
+    - `sdktestapp` contains the test application for the EMV SDK
+- Both the `miuraSdk` and `library` modules publish the generated binaries to the `artifact` directory.
 
-### Quick Win
-1.  Get the [sample app](http://github.com/worldpayus/ipc_sdk_android/tree/master/sampleapp)  
-2.  Open the project in the Android Studio, build it and run it in the simulator
+## Getting started
+- Before attempting to run the `sdktestapp` you must first create a `creds.gradle` file at `SDK/testHarness/sdktestapp/creds.gradle`. It should be structured as below:
+```groovy
+ext.SECURENET_ID = '"SecureNetIdGoesHere"';
+ext.SECURENET_KEY = '"SecureNetKeyGoesHere"';
 
-You can run the app in the simulator and exercise the functions that don't require a device.
+ext.MERCHANTPARTNERS_ID = '"MerchantPartnersIdGoesHere"';
+ext.MERCHANTPARTNERS_PIN = '"MerchantPartnersPinGoesHere"';
 
-### With a Card Reader
-You can use the card reader on your Android device:
-
-3.  Deploy the app on your Android device
-4.  Connect your card reader to your Android device via bluetooth
-5.  Run the app
-
-## More Information
-Read the [Getting Started Guide](https://github.com/worldpayus/ipc_sdk_android/blob/master/docs/Getting%20Started%20with%20the%20Worldpay%20IPC%20SDK%20for%20Android%20beta%201.docx) first
-
-### IPC SDK Class Documentation
-You can find information about the SDK classes here: https://github.com/worldpayus/ipc_sdk_android/tree/master/docs/sdkdoc
-
-### Worldpay Total Developer Resources
-For information about getting your sandbox account, and comprehensive information about the Integrated Payment Hub REST API, see our developer resources at http://worldpay.us/developer
+ext.DEVELOPER_ID = '"AssignedDeveloperIdGoesHere"'
+ext.APP_ID = '"AssignedApplicationIdGoesHere"'
+```
