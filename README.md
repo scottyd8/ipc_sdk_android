@@ -1,23 +1,25 @@
-# android-sdk
+# Worldpay Integrated Payment Client for Android (Beta)
 
-## Project Structure
-- All modules are contained within the SDK project
-- The `library` module contains the source code for the artifacts that will be distributed to other developers for integration purposes.
-- The `miuraSdk` module contains the source code for the Miura PED driver.
-- The `testHarness` module consists of two sub-modules. `miuratestapp` and `sdktestapp`
-    - `miuratestapp` contains the test application for the Miura PED driver.
-    - `sdktestapp` contains the test application for the EMV SDK
-- Both the `miuraSdk` and `library` modules publish the generated binaries to the `artifact` directory.
+## Building the Sample Application
+The quickest way to see the Integrated Payment Client SDK in action is with the sample application.
 
-## Getting started
-- Before attempting to run the `sdktestapp` you must first create a `creds.gradle` file at `SDK/testHarness/sdktestapp/creds.gradle`. It should be structured as below:
-```groovy
-ext.SECURENET_ID = '"SecureNetIdGoesHere"';
-ext.SECURENET_KEY = '"SecureNetKeyGoesHere"';
+### Quick Win
+1.  Get the [sample app](https://github.com/scottyd8/android-demo-app) 
+2.  Simply imoprt the existing project to Android Studio.
+3.  
+You can run the app in the Android Virtual Device (AVD) and exercise the functions that don't require a device.
 
-ext.MERCHANTPARTNERS_ID = '"MerchantPartnersIdGoesHere"';
-ext.MERCHANTPARTNERS_PIN = '"MerchantPartnersPinGoesHere"';
+### With a Card Reader
+You can use the card reader on your Android device:
 
-ext.DEVELOPER_ID = '"AssignedDeveloperIdGoesHere"'
-ext.APP_ID = '"AssignedApplicationIdGoesHere"'
-```
+3.  Deploy the app on your Android device
+4.  Connect your card reader to your Android device via bluetooth
+5.  Run the app
+
+## More Information
+You can find the Getting Started Guide, full documentation of the SDK object library, as well as Application Notes on our [Android documentation library](https://github.com/scottyd8/android-sdk).
+
+### Worldpay Total Developer Resources
+For information about getting your sandbox account, and comprehensive information about the Integrated Payment Hub REST API, see our developer resources at http://worldpay.us/developer
+
+
