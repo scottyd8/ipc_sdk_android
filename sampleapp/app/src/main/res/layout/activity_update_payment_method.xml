@@ -1,0 +1,246 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_save"
+        android:layout_below="@+id/appBarLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/text_size10"
+            android:orientation="vertical"
+            android:padding="@dimen/text_size5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.worldpay.library.views.WPTextView
+                    style="@style/noBoldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Id" />
+
+                <com.worldpay.library.views.WPEditText
+                    android:id="@+id/tv_customer_id"
+                    style="@style/TextBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/text_size5"
+                android:orientation="vertical">
+
+                <com.worldpay.library.views.WPTextView
+                    android:id="@+id/WPTextView2"
+                    style="@style/noBoldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Id" />
+
+                <com.worldpay.library.views.WPEditText
+                    android:id="@+id/tv_payment_id"
+                    style="@style/noBoldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Black Card" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Credit Card Type"
+                    android:textColor="@color/black" />
+
+                <com.worldpay.library.views.WPSimpleFormSpinner
+                    android:id="@+id/spn_transaction_types"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_size5"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="70"
+                    android:orientation="vertical">
+
+                    <com.worldpay.library.views.WPTextView
+                        android:id="@+id/WPTextView"
+                        style="@style/noBoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Card Number" />
+
+                    <com.worldpay.library.views.WPEditText
+                        android:id="@+id/tv_card_no"
+                        style="@style/noBoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:orientation="vertical">
+
+                    <com.worldpay.library.views.WPTextView
+                        style="@style/noBoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CVV" />
+
+                    <com.worldpay.library.views.WPEditText
+                        android:id="@+id/tv_cvv"
+                        style="@style/noBoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_size5"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:orientation="vertical">
+
+                    <com.worldpay.library.views.WPTextView
+                        style="@style/noBoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Expiration Date" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="50">
+
+                        <com.worldpay.library.views.WPEditText
+                            android:id="@+id/tv_expiration_month"
+                            style="@style/noBoldText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="20"
+                            android:gravity="center"
+                            android:hint="MM"
+                            android:maxLength="2" />
+
+                        <com.worldpay.library.views.WPEditText
+                            android:id="@+id/tv_expiration_year"
+                            style="@style/noBoldText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="30"
+                            android:gravity="center"
+                            android:hint="YYYY"
+                            android:maxLength="4" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:orientation="vertical">
+
+                    <com.worldpay.library.views.WPTextView
+                        style="@style/noBoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pin Block" />
+
+                    <com.worldpay.library.views.WPEditText
+                        android:id="@+id/tv_pin_block"
+                        style="@style/noBoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_save"
+        style="@style/buttonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/text_size10"
+        android:drawableLeft="@mipmap/ic_done"
+        android:padding="10dp"
+        android:text="Save" />
+
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/button_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_save"-->
+    <!--style="@style/buttonStyle"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_margin="5dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:drawableLeft="@mipmap/ic_done"-->
+    <!--android:padding="10dp"-->
+    <!--android:text="Save" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_cancel"-->
+    <!--style="@style/buttonStyle"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_margin="5dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:drawableLeft="@mipmap/ic_cancel"-->
+    <!--android:padding="10dp"-->
+    <!--android:text="Cancel" />-->
+    <!--</LinearLayout>-->
+
+</RelativeLayout>

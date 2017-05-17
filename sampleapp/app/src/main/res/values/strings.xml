@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Worldpay</string>
+    <string name="error_no_token">We had an error requesting the authorization token. Please, try again.</string>
+    <string name="loading_title">Getting authorization token</string>
+    <string name="loading_data">Please, be patient!</string>
+    <string name="start_transaction">Start Transaction</string>
+
+    <string name="serviceError">Web Service not invoked!</string>
+
+    <string name="closeDrawer">Navigation View Closed</string>
+    <string name="openDrawer">Navigation View Open</string>
+    <string name="card">Card</string>
+    <string name="no_card">No Card</string>
+    <string name="vault_payment">Vault Payment</string>
+    <string name="send_email">Send E-Mail Receipts</string>
+
+    <string name="transaction">Transaction</string>
+    <string name="transaction_types">Transaction Type</string>
+    <string name="credit_types">Credit Card Type</string>
+
+    <string name="credit_debit">Credit/Debit</string>
+    <string name="capture_refund_void">Capture/Refund/Void</string>
+
+    <string name="hint_field_address">Address</string>
+    <string name="hint_field_city">City</string>
+    <string name="hint_field_state">State</string>
+    <string name="hint_field_zip">Zip</string>
+    <string name="hint_field_country">Country</string>
+
+    <string name="check">Check</string>
+    <string name="customer_id">Customer Id</string>
+    <string name="payment_id">Payment Id</string>
+    <string name="external_dir">GetSignature</string>
+    <string name="payment_type">Payment Type</string>
+
+    <string name="Void">Void</string>
+    <string name="refund">Refund</string>
+
+    <string name="get_curr_batch">Get Current Batch</string>
+    <string name="get_batch">Get Batch</string>
+    <string name="close_batch">Close Current Batch</string>
+
+    <string name="create">Create</string>
+    <string name="update">Update</string>
+    <string name="cancel">Cancel</string>
+    <string name="search">Search</string>
+    <string name="payment_method">Payment Method</string>
+
+    <string name="success">SUCCESS</string>
+    <string name="error">ERROR</string>
+    <string name="nullResponse">Null Response! Service Error</string>
+
+    <string name="approvedVault">Transaction approved and Customer add to Vault</string>
+    <string name="approvedNoVault">Transaction approved</string>
+    <string name="transactionFailed">Transaction failed!</string>
+    <string name="details">Details</string>
+    <string name="done">Done</string>
+    <string name="greaterThanZero">"Amount should be greater than zero!"</string>
+    <string name="signedSuccess">Signature is saved successfully.</string>
+    <string name="noTransaction">No transaction at the moment!</string>
+    <string name="batchClosed">was successfully closed</string>
+    <string name="noTransactionCurrent">No transactions in Current batch</string>
+    <string name="customerCreated">Customer created</string>
+    <string name="close">Close</string>
+    <string name="retry">Retry</string>
+    <string name="requiredKeyID">Please add Merchant KEY and Id inside the gradle!</string>
+
+    <string name="noPaymentID">There is no Payment Id at the moment</string>
+
+    <string name="authorized">Authorize</string>
+    <string name="charge">Charge</string>
+    <string name="credit">Credit</string>
+    <string name="verify">Verify</string>
+    <string name="no_device">No Device Connected</string>
+
+    <string name="hint_transaction_amount">Transaction Amount</string>
+    <string name="hint_gratuity_amount">Gratuity Amount</string>
+
+    <string name="error_invalid_date_entry">Invalid date entry.</string>
+    <string name="transaction_management">Transaction Management</string>
+
+
+</resources>

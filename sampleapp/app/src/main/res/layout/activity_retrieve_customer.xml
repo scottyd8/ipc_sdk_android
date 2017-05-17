@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_search"
+        android:layout_below="@+id/appBarLayout"
+        android:layout_margin="@dimen/text_size5"
+        android:orientation="vertical"
+        android:padding="@dimen/text_size5">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/TextBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Customer Id" />
+
+        <com.worldpay.library.views.WPFormEditText
+            android:id="@+id/field_customer_id"
+            style="@style/TextBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search Result"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/text_size5"
+            android:clipToPadding="false"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_search"
+        style="@style/buttonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/text_size10"
+        android:drawableLeft="@mipmap/ic_search"
+        android:padding="10dp"
+        android:text="@string/search" />
+
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/button_LL"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_margin="@dimen/text_size10"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:weightSum="100">-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_search"-->
+    <!--style="@style/buttonStyle"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="50"-->
+    <!--android:drawableLeft="@mipmap/ic_search"-->
+    <!--android:padding="10dp"-->
+    <!--android:text="@string/search" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_cancel"-->
+    <!--style="@style/buttonStyle"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/text_size5"-->
+    <!--android:layout_weight="50"-->
+    <!--android:drawableLeft="@mipmap/ic_cancel"-->
+    <!--android:padding="10dp"-->
+    <!--android:text="@string/cancel" />-->
+    <!--</LinearLayout>-->
+</RelativeLayout>

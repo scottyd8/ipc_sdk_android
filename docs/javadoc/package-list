@@ -9,7 +9,6 @@ com.miura.sdk.model
 com.miura.sdk.processes
 com.miura.sdk.utils
 com.miura.sdksample
-com.muira.sdksample
 com.worldpay.library
 com.worldpay.library.beans
 com.worldpay.library.constants

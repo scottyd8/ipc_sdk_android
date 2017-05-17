@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimaryDark">#f11e15</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="white">#FFFFFF</color>
+    <color name="button_color">#ededed</color>
+    <color name="header">#ece3e4</color>
+    <color name="black">#000000</color>
+    <color name="worldPay_green">#007867</color>
+    <color name="worldPay_red">#f11e15</color>
+    <color name="navigation_bg">#7d7d7d</color>
+    <color name="disable_gray">#d7d6d6</color>
+    <color name="click_gray">#ccc8c8</color>
+    <color name="gray">#939090</color>
+
+</resources>

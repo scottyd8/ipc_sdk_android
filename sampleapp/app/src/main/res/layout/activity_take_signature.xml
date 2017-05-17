@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/text_size20"
+    android:background="@drawable/bg_wp_tx_dialog"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/disable_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title"
+            style="?android:attr/textAppearanceSearchResultTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="APPROVED"
+            android:textColor="@color/worldPay_green" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/disable_gray" />
+
+    <LinearLayout
+        android:id="@+id/transaction_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text="Transaction Id: " />
+
+        <TextView
+            android:id="@+id/transaction_id"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/disable_gray" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:padding="@dimen/text_size10"
+        android:text="Please sign below... " />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:gravity="center"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/wp_tx_dialog_container_action_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/dialog_clear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_clicked"
+            android:duplicateParentState="true"
+            android:text="Clear"
+            android:textColor="@color/worldPay_red"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/dialog_details"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_clicked"
+            android:duplicateParentState="true"
+            android:enabled="false"
+            android:text="Details"
+            android:textColor="@color/gray"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/dialog_done"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_clicked"
+            android:duplicateParentState="true"
+            android:enabled="false"
+            android:text="Done"
+            android:textColor="@color/gray"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

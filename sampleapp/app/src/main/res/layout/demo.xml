@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/extended_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_size5"
+            android:orientation="horizontal"
+            android:padding="@dimen/text_size5"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/extended_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_plus" />
+
+            <com.worldpay.library.views.WPTextView
+                android:id="@+id/tv_extended_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="EXTENDED INFORMATION"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size20"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/extended_info_LL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!--Terminal Data Plus-->
+            <LinearLayout
+                android:id="@+id/terminal_data_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_size5"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:padding="@dimen/text_size5"
+                android:visibility="visible">
+
+                <com.worldpay.library.views.WPTextView
+                    android:id="@+id/tv_terminal_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Terminal Data"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size15"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/terminal_data_image"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_plus" />
+
+                <!--Terminal Data-->
+                <LinearLayout
+                    android:id="@+id/terminalData_LL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.worldpay.library.views.WPTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/text_size5"
+                        android:layout_marginTop="@dimen/text_size5"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/text_size5"
+                        android:text="Terminal Id"
+                        android:visibility="visible" />
+
+                    <com.worldpay.library.views.WPFormEditText
+                        android:id="@+id/terminal_id"
+                        style="@style/noBoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="Terminal Id"
+                        android:imeOptions="actionNext" />
+
+                    <com.worldpay.library.views.WPTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/text_size5"
+                        android:layout_marginTop="@dimen/text_size5"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/text_size5"
+                        android:text="Terminal City"
+                        android:visibility="visible" />
+
+                    <com.worldpay.library.views.WPFormEditText
+                        android:id="@+id/terminal_city"
+                        style="@style/noBoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/text_size5"
+                        android:hint="Duty Amount"
+                        android:imeOptions="actionNext"
+                        android:inputType="text" />
+
+                    <com.worldpay.library.views.WPTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/text_size5"
+                        android:layout_marginTop="@dimen/text_size5"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/text_size5"
+                        android:text="Terminal State"
+                        android:visibility="visible" />
+
+                    <com.worldpay.library.views.WPFormEditText
+                        android:id="@+id/terminal_state"
+                        style="@style/noBoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/text_size5"
+                        android:hint="Freight Amount"
+                        android:imeOptions="actionNext"
+                        android:inputType="text" />
+
+                    <com.worldpay.library.views.WPTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/text_size5"
+                        android:layout_marginTop="@dimen/text_size5"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/text_size5"
+                        android:text="Terminal Location"
+                        android:visibility="visible" />
+
+
+                    <com.worldpay.library.views.WPFormEditText
+                        android:id="@+id/terminal_location"
+                        style="@style/noBoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/text_size5"
+                        android:hint="Terminal Location"
+                        android:imeOptions="actionNext"
+                        android:inputType="text" />
+
+                    <com.worldpay.library.views.WPTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/text_size5"
+                        android:layout_marginTop="@dimen/text_size5"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/text_size5"
+                        android:text="Store Number"
+                        android:visibility="visible" />
+
+                    <com.worldpay.library.views.WPFormEditText
+                        android:id="@+id/store_number"
+                        style="@style/noBoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/text_size5"
+                        android:hint="Store Number"
+                        android:imeOptions="actionNext"
+                        android:inputType="text" />
+
+                    <com.worldpay.library.views.WPTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/text_size5"
+                        android:layout_marginTop="@dimen/text_size5"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/text_size5"
+                        android:text="Device Serial Number"
+                        android:visibility="visible" />
+
+
+                    <com.worldpay.library.views.WPSimpleFormSpinner
+                        android:id="@+id/device_serial_number"
+                        style="@style/noBoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/text_size5"
+                        android:hint="Device Serial Number"
+                        android:imeOptions="actionNext"
+                        android:inputType="text" />
+
+                    <com.worldpay.library.views.WPTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/text_size5"
+                        android:layout_marginTop="@dimen/text_size5"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/text_size5"
+                        android:text="POS Terminal Input Capability"
+                        android:visibility="visible" />
+
+                    <com.worldpay.library.views.WPFormEditText
+                        android:id="@+id/pos_terminal_input_capibility"
+                        style="@style/noBoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/text_size5"
+                        android:hint="POS Terminal Input Capability"
+                        android:imeOptions="actionNext"
+                        android:inputType="text" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--Level Two Data Plus-->
+            <LinearLayout
+                android:id="@+id/levelTwoData_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_size5"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:padding="@dimen/text_size5"
+                android:visibility="visible">
+
+                <com.worldpay.library.views.WPTextView
+                    android:id="@+id/tv_levelTwoData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Level Two Data"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size15"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/levelTwoData_image"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_plus" />
+            </LinearLayout>
+
+            <!--Level Two Data-->
+            <LinearLayout
+                android:id="@+id/levelTwoData_LL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.worldpay.library.views.WPTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/text_size5"
+                    android:layout_marginTop="@dimen/text_size5"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/text_size5"
+                    android:text="Order Date"
+                    android:visibility="visible" />
+
+                <com.worldpay.library.views.WPFormEditText
+                    android:id="@+id/order_date"
+                    style="@style/noBoldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="Order Date (MM/DD/YYYY)"
+                    android:imeOptions="actionNext" />
+
+                <com.worldpay.library.views.WPTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/text_size5"
+                    android:layout_marginTop="@dimen/text_size5"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/text_size5"
+                    android:text="Duty Amount"
+                    android:visibility="visible" />
+
+                <com.worldpay.library.views.WPFormEditText
+                    android:id="@+id/duty_amount"
+                    style="@style/noBoldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_size5"
+                    android:hint="Duty Amount"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+
+                <com.worldpay.library.views.WPTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/text_size5"
+                    android:layout_marginTop="@dimen/text_size5"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/text_size5"
+                    android:text="Freight Amount"
+                    android:visibility="visible" />
+
+                <com.worldpay.library.views.WPFormEditText
+                    android:id="@+id/freight_amount"
+                    style="@style/noBoldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_size5"
+                    android:hint="Freight Amount"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+
+                <com.worldpay.library.views.WPTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/text_size5"
+                    android:layout_marginTop="@dimen/text_size5"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/text_size5"
+                    android:text="Retail Lane Number"
+                    android:visibility="visible" />
+
+
+                <com.worldpay.library.views.WPFormEditText
+                    android:id="@+id/retail_lane_no"
+                    style="@style/noBoldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_size5"
+                    android:hint="Retail Lane Number"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+
+                <com.worldpay.library.views.WPTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/text_size5"
+                    android:layout_marginTop="@dimen/text_size5"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/text_size5"
+                    android:text="Tax Amount"
+                    android:visibility="visible" />
+
+                <com.worldpay.library.views.WPFormEditText
+                    android:id="@+id/tax_amount"
+                    style="@style/noBoldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_size5"
+                    android:hint="Tax Amount"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+
+                <com.worldpay.library.views.WPTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/text_size5"
+                    android:layout_marginTop="@dimen/text_size5"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/text_size5"
+                    android:text="Tax Status"
+                    android:visibility="visible" />
+
+
+                <com.worldpay.library.views.WPSimpleFormSpinner
+                    android:id="@+id/tax_status"
+                    style="@style/noBoldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_size5"
+                    android:hint="Tax Status"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+
+                <com.worldpay.library.views.WPTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/text_size5"
+                    android:layout_marginTop="@dimen/text_size5"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/text_size5"
+                    android:text="PO Number"
+                    android:visibility="visible" />
+
+                <com.worldpay.library.views.WPFormEditText
+                    android:id="@+id/purchase_order_no"
+                    style="@style/noBoldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_size5"
+                    android:hint="PO Number"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <!--Service Data Plus-->
+            <LinearLayout
+                android:id="@+id/service_data_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_size5"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:padding="@dimen/text_size5"
+                android:visibility="visible">
+
+                <com.worldpay.library.views.WPTextView
+                    android:id="@+id/tv_service_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Service Data"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size15"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/service_data_image"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_plus" />
+
+
+            </LinearLayout>
+
+            <!--User defined Data Plus-->
+            <LinearLayout
+                android:id="@+id/user_defined_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_size5"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:padding="@dimen/text_size5"
+                android:visibility="visible">
+
+                <com.worldpay.library.views.WPTextView
+                    android:id="@+id/tv_user_defined"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="User Defined"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size15"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/user_defined_image"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_plus" />
+
+
+            </LinearLayout>
+
+            <!--Extended Data-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <com.worldpay.library.views.WPTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/text_size5"
+                    android:layout_marginTop="@dimen/text_size5"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/text_size5"
+                    android:text="Notes"
+                    android:visibility="visible" />
+
+                <com.worldpay.library.views.WPFormEditText
+                    android:id="@+id/notes"
+                    style="@style/noBoldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="Notes"
+                    android:imeOptions="actionNext" />
+
+                <com.worldpay.library.views.WPTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/text_size5"
+                    android:layout_marginTop="@dimen/text_size5"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/text_size5"
+                    android:text="Invoice Number"
+                    android:visibility="visible" />
+
+                <com.worldpay.library.views.WPFormEditText
+                    android:id="@+id/invoice_number"
+                    style="@style/noBoldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_size5"
+                    android:hint="Invoice Number"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+
+                <com.worldpay.library.views.WPTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/text_size5"
+                    android:layout_marginTop="@dimen/text_size5"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/text_size5"
+                    android:text="Invoice Description"
+                    android:visibility="visible" />
+
+                <com.worldpay.library.views.WPFormEditText
+                    android:id="@+id/invoice_description"
+                    style="@style/noBoldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_size5"
+                    android:hint="Invoice Description"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+
+                <com.worldpay.library.views.WPTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/text_size5"
+                    android:layout_marginTop="@dimen/text_size5"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/text_size5"
+                    android:text="Device Code"
+                    android:visibility="visible" />
+
+
+                <com.worldpay.library.views.WPFormEditText
+                    android:id="@+id/device_code"
+                    style="@style/noBoldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_size5"
+                    android:hint="Device Code"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+
+                <com.worldpay.library.views.WPTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/text_size5"
+                    android:layout_marginTop="@dimen/text_size5"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/text_size5"
+                    android:text="Entry Source"
+                    android:visibility="visible" />
+
+                <com.worldpay.library.views.WPFormEditText
+                    android:id="@+id/entry_source"
+                    style="@style/noBoldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_size5"
+                    android:hint="Entry Source"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+
+                <CheckBox
+                    android:id="@+id/add_to_vault"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_size5"
+                    android:gravity="right"
+                    android:text="Add to Vault" />
+
+                <CheckBox
+                    android:id="@+id/add_to_vault_on_fail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_size5"
+                    android:gravity="right"
+                    android:text="Add to Vault on Fail" />
+
+
+                <CheckBox
+                    android:id="@+id/allow_partial_charge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_size5"
+                    android:gravity="right"
+                    android:text="Allow Partial Charge" />
+
+                <CheckBox
+                    android:id="@+id/duplicate_check_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_size5"
+                    android:gravity="right"
+                    android:text="Duplicate Check Type" />
+
+                <com.worldpay.library.views.WPTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/text_size5"
+                    android:layout_marginTop="@dimen/text_size5"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/text_size5"
+                    android:text="Order ID"
+                    android:visibility="visible" />
+
+                <com.worldpay.library.views.WPFormEditText
+                    android:id="@+id/order_id"
+                    style="@style/noBoldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_size5"
+                    android:hint="Order ID"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+
+                <com.worldpay.library.views.WPTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/text_size5"
+                    android:layout_marginTop="@dimen/text_size5"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/text_size5"
+                    android:text="Currency Code"
+                    android:visibility="visible" />
+
+                <com.worldpay.library.views.WPFormEditText
+                    android:id="@+id/currency_code"
+                    style="@style/noBoldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_size5"
+                    android:hint="Currency Code"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+
+                <com.worldpay.library.views.WPTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/text_size5"
+                    android:layout_marginTop="@dimen/text_size5"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/text_size5"
+                    android:text="Type of Goods"
+                    android:visibility="visible" />
+
+                <com.worldpay.library.views.WPFormEditText
+                    android:id="@+id/type_of_goods"
+                    style="@style/noBoldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_size5"
+                    android:hint="Type of Goods"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+
+                <!--Mail or Telephone Order Data Plus-->
+                <LinearLayout
+                    android:id="@+id/mail_telephone_order_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_size5"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/text_size5"
+                    android:visibility="visible">
+
+                    <com.worldpay.library.views.WPTextView
+                        android:id="@+id/tv_mail_telephone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Mail or Telephone Order Data"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size15"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/mail_telephone_order_image"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_plus" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mail_telephone_order_LL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.worldpay.library.views.WPTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/text_size5"
+                        android:layout_marginTop="@dimen/text_size5"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/text_size5"
+                        android:text="Type"
+                        android:visibility="visible" />
+
+                    <com.worldpay.library.views.WPFormEditText
+                        android:id="@+id/type"
+                        style="@style/noBoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="Type"
+                        android:imeOptions="actionNext" />
+
+                    <com.worldpay.library.views.WPTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/text_size5"
+                        android:layout_marginTop="@dimen/text_size5"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/text_size5"
+                        android:text="Total Number of Installments"
+                        android:visibility="visible" />
+
+                    <com.worldpay.library.views.WPFormEditText
+                        android:id="@+id/total_installments"
+                        style="@style/noBoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/text_size5"
+                        android:hint="Total Number of Installments"
+                        android:imeOptions="actionNext"
+                        android:inputType="number" />
+
+                    <com.worldpay.library.views.WPTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/text_size5"
+                        android:layout_marginTop="@dimen/text_size5"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/text_size5"
+                        android:text="Current Installment"
+                        android:visibility="visible" />
+
+                    <com.worldpay.library.views.WPFormEditText
+                        android:id="@+id/current_installment"
+                        style="@style/noBoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/text_size5"
+                        android:hint="Current Installment"
+                        android:imeOptions="actionNext"
+                        android:inputType="text" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

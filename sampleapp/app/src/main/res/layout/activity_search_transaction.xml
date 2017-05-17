@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
+
+        <com.worldpay.library.views.WPFormEditText
+            android:id="@+id/fld_start_date"
+            style="@style/noBoldText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="Start Date (MM/DD/YYYY)"
+            android:imeOptions="actionNext" />
+
+        <com.worldpay.library.views.WPFormEditText
+            android:id="@+id/fld_end_date"
+            style="@style/noBoldText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="End Date (MM/DD/YYYY)"
+            android:imeOptions="actionNext" />
+
+        <com.worldpay.library.views.WPFormEditText
+            android:id="@+id/transaction_id"
+            style="@style/noBoldText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_size5"
+            android:hint="Transaction ID"
+            android:imeOptions="actionNext"
+            android:inputType="number" />
+
+        <com.worldpay.library.views.WPFormEditText
+            android:id="@+id/amount"
+            style="@style/noBoldText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_size5"
+            android:hint="Amount"
+            android:imeOptions="actionNext"
+            android:inputType="number" />
+
+        <com.worldpay.library.views.WPFormEditText
+            android:id="@+id/customer_id"
+            style="@style/noBoldText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_size5"
+            android:hint="Customer ID"
+            android:imeOptions="actionNext"
+            android:inputType="number" />
+
+        <com.worldpay.library.views.WPFormEditText
+            android:id="@+id/order_id"
+            style="@style/noBoldText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_size5"
+            android:hint="Order ID"
+            android:imeOptions="actionNext"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_search_transactions"
+        style="@style/buttonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/text_size10"
+        android:drawableLeft="@mipmap/ic_search"
+        android:padding="10dp"
+        android:text="@string/search" />
+
+</LinearLayout>

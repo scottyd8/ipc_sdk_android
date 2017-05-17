@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wp_tx_dialog_container_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|center_horizontal"
+    android:layout_marginEnd="20dp"
+    android:layout_marginStart="20dp"
+    android:background="@drawable/bg_wp_tx_dialog"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/save_msg"
+        style="?android:attr/textAppearanceSearchResultTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:text="Payment Method Saved Successfully." />
+
+    <LinearLayout
+        android:id="@+id/wp_tx_dialog_container_action_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center">
+
+        <Button
+            android:id="@+id/dialog_btn_negative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:duplicateParentState="true"
+            android:text="Dismiss"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</LinearLayout>
